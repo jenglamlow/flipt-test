@@ -1,0 +1,12 @@
+version: "1.5"
+namespace:
+    key: default
+    name: Default
+flags:
+    - key: variant-flag
+      name: Variant Flag
+      type: VARIANT_FLAG_TYPE
+      description: Variant
+      enabled: false
+      metadata:
+        stringfield: THIS IS STRING
