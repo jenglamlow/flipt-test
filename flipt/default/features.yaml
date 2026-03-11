@@ -10,3 +10,7 @@ flags:
       enabled: false
       metadata:
         stringfield: THIS IS STRING
+segments:
+    - key: segment-1
+      name: Segment 1
+      match_type: ALL_MATCH_TYPE
