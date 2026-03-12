@@ -2,39 +2,3 @@ version: "1.5"
 namespace:
     key: marketing
     name: Marketing
-    - key: us_enterprise_segment
-      name: US Enterprise Segment
-      match_type: ALL_MATCH_TYPE
-      constraints:
-          - type: STRING_COMPARISON_TYPE
-            property: country
-            operator: eq
-            value: US
-          - type: STRING_COMPARISON_TYPE
-            property: plan
-            operator: eq
-            value: enterprise
-    - key: de_free_segment
-      name: DE Free Segment
-      match_type: ALL_MATCH_TYPE
-      constraints:
-          - type: STRING_COMPARISON_TYPE
-            property: country
-            operator: eq
-            value: DE
-          - type: STRING_COMPARISON_TYPE
-            property: plan
-            operator: eq
-            value: free
-    - key: pricing_returning_segment
-      name: Pricing Returning Segment
-      match_type: ALL_MATCH_TYPE
-      constraints:
-          - type: STRING_COMPARISON_TYPE
-            property: page
-            operator: eq
-            value: pricing
-          - type: STRING_COMPARISON_TYPE
-            property: isReturningVisitor
-            operator: eq
-            value: "true"
